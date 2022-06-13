@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+
     <script>
         /* 
            자료형 <Data Type>
@@ -34,12 +35,16 @@
         const name1 = "teo"; //쌍따움표
         const name2 =  'teo'; // 따옴표
         const name3 = `teo`; // 백틱
+        console.log(name1);
+        console.log(name2);
+        console.log(name3);
 
         const message = "I'm Iron Man"; //작을 따움표를 사용할 일이 있으면 쌍따옴표로 감싸줍니다.
+        console.log(message);
 
         //작은 따옴표만 써야 한다면
         const message0 ='I\'m Iron man'  //역슬러쉬를 앞에 넣어주면 그 뒤에 문자는 특수문자로 인식합니다.
-
+        console.log(message0);
         //백틱은 문자열 내부에 변수를 표현할 때 유용
         const message2 = `My Name is ${name1}`;
             console.log(message2);
@@ -63,6 +68,36 @@
 
             //NaN = Not a Number = 숫자가 아니다
             //숫자와 관련된 작업을 할 때는 NaN이 아닌지 항상 염두헤두고 작업해야 합니다.
+
+            //논리형<Bloolean : True, False> 
+                const name5 = "teo";
+                const age5 = 30;
+                console.log(name5==="teo");
+                console.log(age > 40);
+
+                // undefined <undefined>:값이 할당 되어 있지 않음
+                    //null <Object> :존재하지 않는 값
+                        let age6;
+                        console.log(age6);
+
+                        let name6 = null;
+                        console.log(name6);
+        //백틱 쓸 때 주의사항
+        const name7 = "teo";
+        // const message7 = `My name is ${name7}`;
+        const message7 = "My Name ${name}";
+        // 따움표안에 연산 X
+        console.log(message7);
+
+        //변수명을 더해서 문자열로 반환
+        const name8 = "teo";
+        const first = "나는";
+        const last = "입니다.";
+        console.log(first + name8 +last);
+
+        //숫자형 + 문자형
+        const age8 = 30; //숫자형
+        console.log(first + age8 + "살" + last);  //이런 결과 값을 문자형으로 변경된다는 점을 인지 하셔야합니다.
 
 
 

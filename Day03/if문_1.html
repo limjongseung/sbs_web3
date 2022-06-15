@@ -24,7 +24,7 @@
     -->
     <script>
     //만약 19세이상의 이용자에게만 환영문구를 띄우고 싶다면?
-    // const age = 19;
+    const age = 19;
 /*     if (age > 19){
         console.log("환영합니다.")
     }
@@ -57,28 +57,28 @@
 
      //OR 연산자  
      // ||  = ...이거나    
-/*      const name2 = "Teo";
+     const name2 = "Teo";
      const age2  = 20;
 
      if (name2  === "Tom" || age2 > 19){ //이름이 tom이거나 나이가 20 살 이상인 경우
         console.log("통과")
      } else {
         console.log("거부")
-     } */
+     }
 
      //AND 연산자
-/*      // && =  ...이고
+     // && =  ...이고
     const name3 = "Teo";
     const age3 = 30;
     if(name3 === "Teo" && age3 > 19){
         console.log("환영")
     }else {
         console.log("거부")
-    } */
+    }
  
     //NOT 연산자
     // !
-/*     const age4 = prompt("나이를 입력해주세요")
+    const age4 = prompt("나이를 입력해주세요")
     const isAdult = age4 > 19;
 
     if(!isAdult){
@@ -86,13 +86,13 @@
     } else {
         console.log("어서오세요")
     }
- */
+
     //우선순위
     //AND 가 OR보다 높습니다.
     
     
     //남자이고, 이름이 Maria 이거나 성인이거나면 통과
-/*     const gender5 = "M";
+    const gender5 = "M";
     const name5 = "Maria";
     const isAdult5 = "true"; 
     //문자형과 숫자형의 값의 인식은 동일하게 취해지지만 사칙연산의 경우는 이루어지지않는다.
@@ -103,7 +103,7 @@
     } else {
         console.log("불가")
     }
- */
+
 /*     const id = prompt("아이디 입력:"); //문자열
     const pw = prompt("패스워드 입력 :") // 문자열
    // if(id === "admin" || pw === "a123"){ // || false (0) + true(1) = true (1);
@@ -118,7 +118,7 @@
     const num2 = 3;
     console.log(num1 + num2); */
 
-/*     const number1 = Number(prompt("필기점수를 기입하세요"));
+    const number1 = Number(prompt("필기점수를 기입하세요"));
     const number2 = Number(prompt("실기점수를 기입하세요"));
 
     if(number1 >= 60 && number2 >= 60){
@@ -128,7 +128,7 @@
         alert ("필기 :" + number1 + "실기" + number2);
         alert ("불합격입니다.")
     }
- */
+
 
  /* 
  prompt로 받은 점수가 
@@ -140,7 +140,7 @@
  */
 //순서가 꼬이지않도록 하기위해 확실한 범위를 설정하는 것이 좋다.
 //즉 60점이상 이라는 조건이 70점 이상이라는 조건보다 위에 다면 아래조건을 보지 않고 60점이상에서 조건을 만족했기 때문에 true값을 주게 된다. 이런 상황을 미연에 방지하기위하여 확실한 조건설정이 중요하다. (&&연산자가 포함되는 이유이다.)
-/*  const score = Number (prompt("평균 점수를 입력하세요"));
+ const score = Number (prompt("평균 점수를 입력하세요"));
 
  if (score >=90 && score <= 100){
     alert("당신은 학점은 A학점 입니다."); // 조건이 true되서 구문을 실행하면 if문을 즉시 종료합니다.
@@ -152,7 +152,7 @@
      alert("당신은 학점은 D학점 입니다.");
     }else{
     alert("당신은 학점은 F학점 입니다.");
-} */
+}
 // 1. 사용자로부터 id 와 pw를 각각 변수에받으세요
 // 2. 입력받은 id와 pw가 id : admin / pw : a123으로 입력받은 경우에먼
 //로그인 성공 이라는 alert을 출력해주세요.
@@ -184,8 +184,6 @@ if (id === "admin" && pw === "a123"){
 } else if (id === "admin" ) {
     alert("비밀번호가 틀렸습니다.")
 } else {"둘 다 틀렸습니다."}
-
-
  */
 
 

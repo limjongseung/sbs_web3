@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>for문 - 반복문</title>
 </head>
-<body>
+<body id = contents>
     <script>
         //for문 = 반복문 = 반복하는 카운터를 정한 뒤에 그 횟수만큼 반복하는 것
 
@@ -68,21 +68,21 @@
             console.log(number2)
         } */
 
-        // let cat;
-        // for(cat =10; cat >=1; cat--){
-        //     let img =document.createElement("img");
-        //     img.src = "company6.jpg";
-        //     img.style.width= "180px";
-        //     document.getElementById("contents").appendChild();
-        // }
         let cat;
-        for (cat = 1; cat >= 1; cat--) {
-            let img = document.createElement("img");
-            img.src = "cat.png";
-            img.style.width = "180px";
-
+        for(cat =40; cat >=1; cat--){
+            let img =document.createElement("img");
+            img.src = "company6.jpg";
+            img.style.width= "180px";
             document.getElementById("contents").appendChild(img);
         }
+        // let cat;
+        // for (cat = 1; cat >= 1; cat--) {
+        //     let img = document.createElement("img");
+        //     img.src = "cat.png";
+        //     img.style.width = "180px";
+
+        //     document.getElementById("contents").appendChild(img);
+        // }
 
 
         //for of 반복문 : 배열 전용으로 사용되는 반복문

@@ -9,3 +9,12 @@ a{
     margin: 100px;
     text-align: center;
 }
+.box{
+    width: 500px;
+    height: 500px;
+    background: tomato;
+    margin: 100px;
+}
+body{
+    height: 4000px;
+}

@@ -62,6 +62,7 @@ window.addEventListener("mousewheel", e =>{
     if(e.deltaY >0) console.log("Wheel Down!")
     if(e.deltaY <0) console.log("Wheel Up!")
 });
+//이벤트안에 if문에서는 else사용 안합니다.
 
 
 

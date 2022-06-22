@@ -4,10 +4,6 @@
      (click, mouseover,mouseleave, mousemove,  mousewheel. scroll)
      2.시스템이 발생시키는 이벤트
      (load, error)
-     
-
-
-
 */
 
 

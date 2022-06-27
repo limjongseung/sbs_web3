@@ -83,27 +83,27 @@ $(document).ready(function(){
     $(".search li:eq(0)").css("background","magenta");
 
     
+     // ====================================
+
+     // 6.속성탐색 선택자 : 
      
+     // 요소[속성]: 속성이 있는 요소 선택
+     $("a[title]").css("border","5px solid red");
 
+     //요소[속성 = 값] : 속성과 값이 일치하는 요소 선택
+     $("a[href='https://www.naver.com']").css("background","pink");
 
+     //요소 속성의 값으로 시작하는 요소 선택 ^= "mailto"     "mailto"로 시작하는 요소 선택
+     $("a[href^='mailto']").css("background","aqua");
 
+     //요소 속성의 값으로 끝나는 요소 선택
+     $("a[href$='net']").css("background","gray");
 
+     //요소 속성의 값이 포함되는 요소 선택
+     $("a[href*='naver']").css("border","5px solid orange");  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     //요소의 and  조건으로 조건 2개의 속성과 값을 모두 만족하는 요소 선택
+     $("a[href^='mailto'][href$='net']").css("font-weight","bold");
 
 
 

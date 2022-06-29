@@ -21,12 +21,12 @@ $(".btn1").on("click",function(){
 
 
 
-// 더블클릭 안됨
-// $(".btn2").on("dbclick",function(){
-//     $(".text").css("border","2px solid tomato");
-// });
+//더블클릭 안됨
+$(".btn2").on("dblclick",function(){
+    $(".text").css("border","2px solid tomato");
+});
 
-// $("btn2").dbclick(function(){
+// $("btn2").dblclick(function(){
 //     $(".text").css("border","2px solid magenta")
 // });
 

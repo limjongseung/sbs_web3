@@ -42,6 +42,51 @@ $(".btn6").on("click",function(){
 });
 
 
+//^ fadeTo : 선택한 요소를 지정한 투명도 값 까지 투명도를 부여하는 기능
+// 투명도는 두번째 인수 값에 삽입하며, 0~1까지 (소수점 포함)으로 입력가능
+
+
+$(".btns1").on("click",function(){
+    $(".img3").fadeTo(1000,1);
+    //* 인수값 1 : 구동시간 / 인수값2 : 투명도 값
+});
+
+
+$(".btns2").on("click",function(){
+    $(".img3").fadeTo(1000,0.75);
+});
+
+$(".btns3").on("click",function(){
+    $(".img3").fadeTo(1000,0.5);
+});
+
+$(".btns4").on("click",function(){
+    $(".img3").fadeTo(1000,0.25);
+});
+
+$(".btns5").on("click",function(){
+    $(".img3").fadeTo(1000,0);
+});
+
+//==============================================
+
+//^ slideUp() : 요소를 숨길 때 사용하는 기능
+//^ slideDown() : 요소를 나타낼떼 사용하는 기능
+//^ slideToggle() : 요소가 나타나 있으면 숨기고 숨겨져 있으면 나타내는 기능
+
+$(".btns6").on("click",function(){
+    $(".box").slideUp(1000);
+});
+
+$(".btns7").on("click",function(){
+    $(".box").slideDown(1000);
+});
+
+$(".btns8").on("click",function(){
+    $(".box").slideToggle(1000);
+});
+
+
 
 
 

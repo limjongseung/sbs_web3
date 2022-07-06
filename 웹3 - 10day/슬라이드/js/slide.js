@@ -10,24 +10,60 @@ $(".slider").slick({
     draggable : false, //드래그 슬라이드 옵션
     dots : true, //슬라이드페이지네이션 옵션
     arrows:true, //previous & next 버튼 옵션
-    slidesToShow: 2,//한 화면에 보여질 슬라이드 갯수
-    slidesToScroll: 2, //한번에 슬라이드가 되는 콘텐츠 개수
+    slidesToShow: 4,//한 화면에 보여질 슬라이드 갯수
+    slidesToScroll: 4, //한번에 슬라이드가 되는 콘텐츠 개수
+    fade:false, // 페이드 효과옵션(slidestoshow 의 개수가 1개일 때만 사용가능)
+    responsive : [ //반응형 슬라이드 옵션
+
+        {
+            breakpoint : 1400, // 화면 사이즈 1400px
+            settings: {
+                slidesToShow: 3,//한 화면에 보여질 슬라이드 갯수
+                slidesToScroll: 3 //한번에 슬라이드가 되는 콘텐츠 개수
+            }
+        },
+        {
+            breakpoint : 1000, // 화면 사이즈 1000px
+            settings: {
+                slidesToShow: 2,//한 화면에 보여질 슬라이드 갯수
+                slidesToScroll: 2 //한번에 슬라이드가 되는 콘텐츠 개수
+            }
+        },
+        {
+            breakpoint : 700, // 화면 사이즈 700px
+            settings: {
+                slidesToShow: 1,//한 화면에 보여질 슬라이드 갯수
+                slidesToScroll: 1 //한번에 슬라이드가 되는 콘텐츠 개수
+            }
+        }
 
 
-    
 
-
-
-
-
-
-
-
-
-
+    ]
 
 });
 
+$(".slider2").slick({
+    speed: 1000,
+    slidesToShow: 4,//한 화면에 보여질 슬라이드 갯수
+    slidesToScroll: 3, //한번에 슬라이드가 되는 콘텐츠 개수
+    dots : true, //슬라이드페이지네이션 옵션
+    arrows:true, //previous & next 버튼 옵션
+    prevArrow : $(".slider2_prev"), //previous 버튼의 클래스
+    nextArrow : $(".slider2_next"), // next 버튼의 클래스
+    dotsClass: "slider2_dots"   //dots 버튼의 클래스
+
+
+
+
+
+
+
+
+
+
+
+})   
 
 
 

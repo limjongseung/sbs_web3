@@ -4,9 +4,13 @@ ul,dl,ol{list-style-type: none;}
 button{border: none;}
 
 .slider{
-    width: 600px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
+    padding: 0px 50px;
+    overflow: hidden;
+
 }
 
 /* slick-prev slick-arrow */
@@ -17,6 +21,7 @@ button{border: none;}
     position: absolute;
     left: -50px;
     top: 45%;
+    left: 10px;
     transform: translateY(-50%);
     z-index: 1;
     border-top: 5px solid red;
@@ -32,6 +37,7 @@ button{border: none;}
     position: absolute;
     right: -50px;
     top: 45%;
+    right: 10px;
     transform: translateY(-50%);
     z-index: 1;
     border-top: 5px solid red;
@@ -66,11 +72,43 @@ button{border: none;}
     background: red;
 }
 
+.slider img{
+    margin: 0 auto;
+}
 
 
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider2 {
+    width: 1400px;
+    overflow: hidden;
+}
 
+.slider2_prev{
+    position: absolute;
+    left: 250px;
+    top: 450px;
+    cursor: pointer;
+    z-index: 1;
+    /* background: red; */
+    font-size: 100px;
+}
+.slider2_next{
+    position: absolute;
+    right: 250px;
+    top: 450px;
+    cursor: pointer;
+    z-index: 1;
+    /* background: red; */
+    font-size: 100px;
+}
 
-
+.slider2_dots{
+    cursor: pointer;
+}
 
 
 

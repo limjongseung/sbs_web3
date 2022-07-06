@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul,ol,dl{list-style: none;}
+a{text-decoration: none; color: inherit;}
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+.clf::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#header{
+    width: 400px;
+    height: 100%;
+    position: fixed;
+    left: 0;top: 0;
+    background: linear-gradient(45deg, navy, cornflowerblue);
+}
+
+#header h1{
+    font: 700 50px/1 'Titillium Web';
+    color: #fff;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-200%);
+}
+
+#header h1::before{
+    content: "WEB DEVELOPMENT";
+    font:400  14px/1 'Titillium Web';
+    letter-spacing: 2px;
+    position: absolute;
+    left: 0;
+    top: 140px;
+}
+
+#header h1::after{
+    content: "";
+    display: block;
+    width: 260px;
+    height: 2px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+

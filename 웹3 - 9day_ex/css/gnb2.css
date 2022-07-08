@@ -25,12 +25,12 @@ body{
 }
 
 .gnb > li ul {
-    height:0;
-    overflow:hidden;
-    transition:all 0.5s;
+    /* height:0; */
+    /* overflow:hidden; */
+    /* transition:all 0.5s; */
+    /* height:120px; */
 }
 .gnb > li:hover ul{
-    height:120px;
 }
 
 .gnb > li ul > li{

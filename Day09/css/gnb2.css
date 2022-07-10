@@ -28,6 +28,7 @@ body{
     /* overflow: hidden; */
     /* transition: all 0.5s; */
     /* height: 126px; */
+    /* ! transition (css) 와 JQuery slideDown(시간)함께 적용하면 뻑남 */
 }
 
 

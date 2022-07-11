@@ -2,6 +2,7 @@
 ul,dl,ol {list-style: none;}
 
 button{border: none;}
+/* body{margin: 40px;} */
 
 .slider{
     width: 100%;
@@ -11,3 +12,79 @@ button{border: none;}
     padding: 0px 50px;
     overflow: hidden;
 }
+
+/* slick-prev slick-arrow */
+.slider .slick-prev{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    position: absolute;
+    top: 115px;
+    left: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-top: 5px solid red;
+    border-left: 5px solid red;
+    transform: rotate(-45deg);
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.slider .slick-next{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    position: absolute;
+    top: 115px;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 1;
+    border-top: 5px solid red;
+    border-right: 5px solid red;
+    transform: rotate(45deg);
+    cursor: pointer;
+    text-indent: -9999px;
+}
+
+.slider .slick-dots{
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+    height: 20px;
+    text-indent: -9999px;
+}
+
+.slider .slick-dots li {
+    width: 20px;
+    border: 1px solid red;
+    height: 20px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider .slick-dots li:last-child{
+    margin-right: 0;
+}
+
+.slider .slick-dots li.slick-active{
+    background: red;
+}
+
+.slider img{
+    margin: 0 auto;
+    /* ! 화살표 사이의 공백을 정확하게 나누기 위해 이미지요소를 정렬시켜줌 */
+}
+
+
+
+
+
+
+
+
+
+
+

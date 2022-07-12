@@ -1,0 +1,48 @@
+
+
+
+
+===========================================================
+
+
+$(function(){
+
+    $('.slide_target').slick({
+        slide: 'div',        //슬라이드 되어야 할 태그 ex) div, li
+        infinite : true,     //무한 반복 옵션
+        slidesToShow : 4,        // 한 화면에 보여질 컨텐츠 개수
+        slidesToScroll : 4,        //스크롤 한번에 움직일 컨텐츠 개수
+        speed : 1000,     // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+        arrows : true,         // 옆으로 이동하는 화살표 표시 여부
+        dots : true,         // 스크롤바 아래 점으로 페이지네이션 여부
+        autoplay : false,            // 자동 스크롤 사용 여부
+        autoplaySpeed : 2000,         // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+        pauseOnHover : false,        // 슬라이드 이동 시 마우스 호버하면 슬라이더 멈추게 설정
+        vertical : false,        // 세로 방향 슬라이드 옵션
+        draggable : true,     //드래그 가능 여부
+        fade: true,     //페이드 효과 여부
+        nextArrow:$('.slide_next'), // next 버튼 class 지정
+        prevArrow:$('.slide_next'), // previous 버튼 class 지정
+        dotsClass : "slick-dots",     //아래 나오는 페이지네이션(점) css class 지정
+        responsive: [ // 반응형 웹 구현 옵션
+            {
+                breakpoint: 1700, //화면 사이즈 1700px
+                settings: {
+                    //위에 옵션이 디폴트 , settings property 안에 추가하면 그걸로 변경
+                    slidesToShow:4,
+                    slidesToScroll : 4,  
+                }
+            },
+            {
+                breakpoint: 1200, //화면 사이즈 1200px
+                settings: {
+                    //위에 옵션이 디폴트 , settings property 안에 추가하면 그걸로 변경
+                    slidesToShow:3,
+                    slidesToScroll : 3,  
+                }
+            }
+        ]
+    });
+
+
+});
